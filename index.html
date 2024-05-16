@@ -3,44 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css" />
+    <title>GCU Resource Management System (GRMS)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: url("https://grms.gardencity.university/getBannerImage.json?customerId=1&customerUID=02652e0c-9995-5941-93e6-000d3aa07e51");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh; /* Ensure the body takes the full viewport height */
+        display: flex;
+        align-items: center; /* Center content vertically */
+        justify-content: flex-end; /* Align content to the right */
+        padding-right: 20px; /* Add some padding to the right */
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      header .logo img {
+        max-width: 100px;
+        margin-bottom: 10px;
+      }
+
+      header .title h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      header .title p {
+        font-size: 14px;
+      }
+
+      main {
+        display: flex;
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Center content vertically */
+        flex-grow: 1;
+        padding-right: 20px; /* Add some padding to the right */
+      }
+
+      .login-box {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.947
+        ); /* Semi-transparent background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .login-box h2 {
+        margin-bottom: 20px;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .forgot-password,
+      .registration-link {
+        display: block;
+        margin-top: 10px;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .forgot-password:hover,
+      .registration-link:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .footer-links a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+
+      footer p {
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Dr apj abdul kalam school of enginering</h1>
-    <form>
-      <label>first name :</label>
-      <input type="text" />
-      <br />
-
-      <label>last name :</label>
-      <input type="text" />
-      <br />
-
-      <label>mail:</label>
-      <input type="mail" />
-      <br />
-
-      <input type="radio" />
-      <label>male:</label>
-
-      <br />
-      <input type="radio" />
-
-      <label>female:</label>
-
-      <br />
-
-      <input type="radio" />
-      <label>other:</label>
-      <br />
-
-      <label>password </label>
-      <input type="password" />
-      <br />
-
-      <label>date of birth</label>
-      <input type="date" />
-    </form>
+    <header>
+      <!-- Header content here -->
+    </header>
+    <main>
+      <div class="login-box">
+        <h2>Welcome! Please login to continue.</h2>
+        <form action="#" method="post">
+          <div class="input-group">
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter username"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <a href="#" class="registration-link"
+          >Applicant Employee Registration</a
+        >
+      </div>
+    </main>
   </body>
 </html>
